@@ -1,7 +1,7 @@
 {
   "name": "Python/Java Development with VNC Desktop",
   "image": "mcr.microsoft.com/devcontainers/python:3.9",
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y python3-tk xvfb x11vnc",
+  "postCreateCommand": "sudo apt-get update -y && sudo apt-get install -y python3-tk xvfb x11vnc && chmod +x start.sh && ./start.sh",
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {},
     "ghcr.io/devcontainers/features/java:1": {}
