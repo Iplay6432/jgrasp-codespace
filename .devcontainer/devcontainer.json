@@ -1,21 +1,11 @@
 {
-  "name": "Python/Java Development with ChromeOS-like Desktop",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "postCreateCommand": "sudo apt update -y && sudo apt upgrade -y",
-  "features": {
-    "ghcr.io/devcontainers/features/desktop:1": {},
-    "ghcr.io/devcontainers/features/java:1": {}
+  "build": {
+    "dockerfile": "Dockerfile"
   },
-  "customizations": {
-    "vscode": {
-      "extensions": ["vscjava.vscode-java-pack"]
-    }
-  },
+  "privileged": true,
   "forwardPorts": [6080],
-  "portsAttributes": {
-    "6080": {
-      "label": "desktop"
-    }
-  },
-  "remoteUser": "vscode"
+  "runArgs": ["--cap-add=SYS_ADMIN"],
+  "postCreateCommand": "pip3 install numpy && printf \"password\npassword\n\n\" | vncpasswd && git clone https://github.com/novnc/noVNC.git",
+  
+  "postStartCommand": "vncserver -xstartup \"cinnamon-session\" -rfbport 5900 && ./noVNC/utils/novnc_proxy --vnc 127.0.0.1:5900 --listen localhost:6080"
 }
