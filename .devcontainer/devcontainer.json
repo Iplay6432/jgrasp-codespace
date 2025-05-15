@@ -1,7 +1,7 @@
 {
   "name": "Python/Java Development with ChromeOS-like Desktop",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "postCreateCommand": "RUN apt-get update && export DEBIAN_FRONTEND=noninteractive  && curl -sSL https://dl.google.com/linux/direct/google-chrome-stable_current_$(dpkg --print-architecture).deb -o /tmp/chrome.deb && apt-get -y install /tmp/chrome.deb",
+  "postCreateCommand": "sudo apt update -y && sudo apt upgrade -y",
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {},
     "ghcr.io/devcontainers/features/java:1": {}
