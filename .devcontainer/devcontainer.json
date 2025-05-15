@@ -2,6 +2,8 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {} },
   "privileged": true,
   "forwardPorts": [6080],
   "runArgs": ["--cap-add=SYS_ADMIN"],
