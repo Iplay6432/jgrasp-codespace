@@ -19,10 +19,17 @@ Click the Bottom on the bottom left of the desktop and search "xfce Terminal" an
 
 Run the commands:
 ```bash
-cd /workspaces/codespace
+cd /workspaces/jgrasp-codespace
 chmod +x jgrasp.sh
 ./jgrasp.sh
 ```
+
+Copy the command into by clicking the tab on the middle left on the screen and clicking the clipboard and paste the command in
+
+Click the open terminal and press ctrk+shift+v, if it says "Warning: Unsafe paste" click the past button on the top right of the window
+
 After those commands jgrasp should be downloaded and there should be a file called jgrasp.sh on the desktop, double click in and click run
 
 You are using jgrasp!!
+
+
