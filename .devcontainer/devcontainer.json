@@ -3,7 +3,7 @@
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "postCreateCommand": "sudo apt update -y && sudo apt upgrade -y",
   "features": {
-    "ghcr.io/devcontainers/features/desktop-lite:1": {},
+    "ghcr.io/devcontainers/features/desktop:1": {},
     "ghcr.io/devcontainers/features/java:1": {}
   },
   "customizations": {
