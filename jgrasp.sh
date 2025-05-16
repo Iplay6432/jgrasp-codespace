@@ -5,6 +5,10 @@ wget https://www.jgrasp.org/dl4g/jgrasp/jgrasp206_17.zip
 
 unzip jgrasp206_17.zip
 
-cd ~/Desktop
-echo "#!/bin/bash \n cd ~/jgrasp \n java -jar ../jgrasp/jgrasp.jar" > jgrasp.sh
+cd Desktop
+cat <<EOF > jgrasp.sh
+#!/bin/bash
+cd ~/jgrasp
+java -jar ../jgrasp/jgrasp.jar
+EOF
 chmod +x jgrasp.sh
