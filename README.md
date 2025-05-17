@@ -1,4 +1,4 @@
-use the "Preview in Editor" button in the ports control to view; password is "password"
+use the "Preview in Editor" button in the ports control to view; password is "password" (don't worry of the insecure password, only your github account can access the code space)
 ## Instructions
 
 Create a new codespace and wait for it to load (may take upwards of 5 minutes)
