@@ -3,7 +3,7 @@ use the "Preview in Editor" button in the ports control to view; password is "pa
 
 Create a new codespace and wait for it to load (may take upwards of 5 minutes)
 
-Click the TERMINAL tab that is in vscode and click the plush button on the top right of the TERMINAL panel
+Click the TERMINAL tab that is in vscode and click the plus button on the top right of the TERMINAL panel
 
 Run the command:
 ```bash
